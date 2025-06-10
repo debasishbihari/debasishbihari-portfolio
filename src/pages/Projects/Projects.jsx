@@ -10,7 +10,7 @@ const projects = [
     description:
       "A storage management and file sharing platform that lets users effortlessly upload, organize, and share files. Built with the latest Next.js 15 and the Appwrite Node SDK, utilizing advanced features for seamless file management. \n\n🛠 Tech Stack: React, Next.JS 15, Appwrite, Tailwind CSS, Shadcn, Typescript",
     src: "tree.jpg",
-    link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+    link: "https://postimage.me/images/2025/06/11/Screenshot-2025-06-11-044232.th.jpg",
     color: "#8f89ff",
     githubLink: "https://github.com/debasishbihari/storeit_storage_management_solution",
     liveLink: "https://storeit-storage-management-solution-tdy3.vercel.app/",
@@ -20,27 +20,27 @@ const projects = [
     description:
       "Quick Chat App is a real-time messaging application that allows users to communicate instantly with each other. Built with a modern tech stack, it ensures seamless and efficient communication.\n\n🛠 Tech Stack: React, Redux Toolkit, Tailwind CSS, Node.JS, Express.js, MongoDB, Socket.io, Cloudinary",
     src: "rock.jpg",
-    link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
+    link: "https://postimage.me/images/2025/06/11/Screenshot-2025-06-11-044500.th.jpg",
     color: "#5196fd",
     githubLink: "https://github.com/debasishbihari/quick-chat-app",
     liveLink: "https://quick-chat-app-two.vercel.app/",
   },
-  {
-    title: "restate",
-    description:
-      "A full-stack Real Estate application with React Native, featuring Google authentication, dynamic property listings, and user profiles. Designed with modern tools like Expo SDK 52, Appwrite, Tailwind CSS, and TypeScript for a seamless and scalable experience. \n\n🛠 Tech Stack: React Native, Expo, Typescript, NativeWind, Appwrite, Tailwind CSS",
-    src: "water.jpg",
-    link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
-    color: "#fff",
-    githubLink: "https://github.com/debasishbihari/restate",
-    liveLink: "https://github.com/debasishbihari/restate",
-  },
+  // {
+  //   title: "restate",
+  //   description:
+  //     "A full-stack Real Estate application with React Native, featuring Google authentication, dynamic property listings, and user profiles. Designed with modern tools like Expo SDK 52, Appwrite, Tailwind CSS, and TypeScript for a seamless and scalable experience. \n\n🛠 Tech Stack: React Native, Expo, Typescript, NativeWind, Appwrite, Tailwind CSS",
+  //   src: "water.jpg",
+  //   link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
+  //   color: "#fff",
+  //   githubLink: "https://github.com/debasishbihari/restate",
+  //   liveLink: "https://github.com/debasishbihari/restate",
+  // },
   {
     title: "Portfolio Website 1",
     description:
       "First version of my portfolio website, showcasing my skills and projects with a modern design and responsive layout. \n\n🛠 Tech Stack: HTML, CSS, React, SCSS",
     src: "house.jpg",
-    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
+    link: "https://postimage.me/images/2025/06/11/Screenshot-2025-06-11-043844.th.jpg",
     color: "#ed649e",
     githubLink: "https://github.com/debasishbihari/debasishbihari.github.io",
     liveLink: "https://debasishbihari.github.io/",
@@ -50,7 +50,7 @@ const projects = [
     description:
       "Silk Touch is web store which sells cosmetics and skin care products.Shop trusted skin care, makeup and beauty products, including SkinCeuticals, Obagi, Sunday Riley and Oribe. \n\n🛠 Tech Stack: React, React-Hooks, Redux, Chakra-UI, NodeJs, ExpressJs, MongoDB",
     src: "rock.jpg",
-    link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
+    link: "https://postimage.me/images/2025/06/11/Screenshot-2025-06-11-043721.th.jpg",
     color: "#5196fd",
     githubLink: "https://github.com/abha2510/SILKTOUCH",
     liveLink: "https://silktouch.netlify.app/",
@@ -60,7 +60,7 @@ const projects = [
     description:
       "nearbuy helps you discover the best things to do, eat and buy – wherever you are! Make every day awesome with nearbuy. Dine at the finest restaurants, relax at the best spas, pamper yourself with exciting wellness and shopping offers or just explore your city intimately… you will always find a lot more to do with nearbuy. \n\n🛠 Tech Stack: HTML, CSS, Javascript, React, Redux-Toolkit, Chakra-UI",
     src: "tree.jpg",
-    link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+    link: "https://postimage.me/images/2025/06/11/Screenshot-2025-06-11-043548.th.jpg",
     color: "#8f89ff",
     githubLink: "https://github.com/debasishbihari/lame-crayon-5872",
     liveLink: "https://beautiful-kitten-367e3e.netlify.app/",
@@ -70,7 +70,7 @@ const projects = [
     description:
       "Inspired from Lately.ai, It's an AI website which create your social media content and manage your social media marketing and social selling programs. \n\n🛠 Tech Stack: HTML, CSS, Javascript",
     src: "water.jpg",
-    link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
+    link: "https://postimage.me/images/2025/06/11/Screenshot-2025-06-11-043327.th.jpg",
     color: "#fff",
     githubLink: "https://github.com/capitalN/lately.ai",
     liveLink: "https://dulcet-marigold-6dca17.netlify.app/",
@@ -80,7 +80,7 @@ const projects = [
     description:
       "Inspired from unbounce.com, It's a website building site, which you can use for making a website or website template for you. \n\n🛠 Tech Stack: HTML, CSS, Javascript",
     src: "house.jpg",
-    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
+    link: "https://postimage.me/images/2025/06/11/Screenshot-2025-06-11-042848.th.jpg",
     color: "#ed649e",
     githubLink: "https://github.com/debasishbihari/gray-mice-8530",
     liveLink: "https://unbouncecloneproject.netlify.app/",
