@@ -2,48 +2,47 @@ import React, { useState, useEffect } from "react";
 import {
   FaHome,
   FaLaptopCode,
-  FaUser,
   FaBriefcase,
   FaGraduationCap,
   FaCode,
   FaEnvelope,
   FaBars,
 } from "react-icons/fa";
-import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
-  const location = useLocation();
-  const [activeLink, setActiveLink] = useState(() => {
-    const path = location.pathname.substring(1) || "home";
-    return path;
-  });
+  const [activeLink, setActiveLink] = useState("hero");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section[id]");
+      let current = "hero";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY >= sectionTop - 80) {
+          current = section.getAttribute("id");
+        }
+      });
+      setActiveLink(current);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { id: "home", icon: FaHome, text: "About Me", path: "/" },
-    { id: "skills", icon: FaCode, text: "Skills", path: "/skills" },
-    { id: "projects", icon: FaLaptopCode, text: "Projects", path: "/projects" },
-    {
-      id: "experience",
-      icon: FaBriefcase,
-      text: "Experience",
-      path: "/experience",
-    },
-    {
-      id: "education",
-      icon: FaGraduationCap,
-      text: "Education",
-      path: "/education",
-    },
-    
-    { id: "contact", icon: FaEnvelope, text: "Contact", path: "/contact" },
+    { id: "hero", icon: FaHome, text: "About Me", hash: "#hero" },
+    { id: "skills", icon: FaCode, text: "Skills", hash: "#skills" },
+    { id: "projects", icon: FaLaptopCode, text: "Projects", hash: "#projects" },
+    { id: "experience", icon: FaBriefcase, text: "Experience", hash: "#experience" },
+    { id: "education", icon: FaGraduationCap, text: "Education", hash: "#education" },
+    { id: "contact", icon: FaEnvelope, text: "Contact", hash: "#contact" },
   ];
 
   return (
@@ -51,45 +50,34 @@ export default function Header() {
       <div className="md:fixed md:top-4 md:left-1/2 md:transform md:-translate-x-1/2 w-full md:w-auto">
         <div className="p-[2px] md:rounded-full bg-gradient-to-r from-emerald-400 via-cyan-500 to-indigo-500 animate-gradient-x">
           <nav className="bg-gray-900/90 backdrop-blur-md md:rounded-full px-4 md:px-6 py-2.5">
-            {/* Mobile Menu Button */}
+            {/* Mobile Menu */}
             <div className="flex justify-between items-center md:hidden px-2">
-              <Link to="/" className="text-white font-bold">Portfolio</Link>
-              <button 
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-white p-2"
-              >
+              <a href="#hero" className="text-white font-bold">Portfolio</a>
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white p-2">
                 <FaBars />
               </button>
             </div>
 
             {/* Navigation Links */}
-            <div className={`${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+            <div className={`${isMenuOpen ? "block" : "hidden"} md:block`}>
               <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-1 lg:gap-2 py-4 md:py-0">
-                {navLinks.map(({ id, icon: Icon, text, path }) => (
-                  <Link
+                {navLinks.map(({ id, icon: Icon, text, hash }) => (
+                  <a
                     key={id}
-                    to={path}
+                    href={hash}
                     onClick={() => {
                       setActiveLink(id);
                       setIsMenuOpen(false);
                     }}
-                    className={`px-3 py-2 md:py-1.5 rounded-lg md:rounded-full text-sm font-medium
-                      transition-all duration-300 flex items-center gap-2
-                      hover:bg-white/10 
-                      ${
-                        activeLink === id
-                          ? "bg-white/15 text-white"
-                          : "text-gray-300 hover:text-white"
-                      }
-                    `}
+                    className={`px-3 py-2 md:py-1.5 rounded-lg md:rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2 hover:bg-white/10 ${
+                      activeLink === id
+                        ? "bg-white/15 text-white"
+                        : "text-gray-300 hover:text-white"
+                    }`}
                   >
-                    <Icon
-                      className={`text-base ${
-                        activeLink === id ? "scale-110" : ""
-                      }`}
-                    />
+                    <Icon className={`text-base ${activeLink === id ? "scale-110" : ""}`} />
                     <span className="inline">{text}</span>
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>
@@ -99,12 +87,8 @@ export default function Header() {
 
       <style>{`
         @keyframes gradient-x {
-          0%, 100% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
         }
         .animate-gradient-x {
           animation: gradient-x 3s linear infinite;
