@@ -17,7 +17,7 @@ export default function App() {
         <section id="skills"><Skills /></section>
         <section id="projects"><Projects /></section>
         <section id="experience"><Experience /></section>
-        <section id="education"><Education /></section>
+        {/* <section id="education"><Education /></section> */}
         <section id="contact"><Contact /></section>
       </main>
     </>

@@ -41,7 +41,7 @@ export default function Header() {
     { id: "skills", icon: FaCode, text: "Skills", hash: "#skills" },
     { id: "projects", icon: FaLaptopCode, text: "Projects", hash: "#projects" },
     { id: "experience", icon: FaBriefcase, text: "Experience", hash: "#experience" },
-    { id: "education", icon: FaGraduationCap, text: "Education", hash: "#education" },
+    // { id: "education", icon: FaGraduationCap, text: "Education", hash: "#education" },
     { id: "contact", icon: FaEnvelope, text: "Contact", hash: "#contact" },
   ];
 

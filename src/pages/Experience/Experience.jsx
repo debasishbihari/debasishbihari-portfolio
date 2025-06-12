@@ -75,7 +75,7 @@ const ExperienceSection = () => {
       icon: Layers,
       title: "Web Developer",
       company: "ihub-AWaDH",
-      period: "2021 - 2023",
+      period: "Jan 2025 - June 2025",
       description: [
         "Developed scalable web applications focused on agriculture and water resource decision-making systems.",
         "Collaborated with multidisciplinary teams to build data-driven, research-oriented platforms.",

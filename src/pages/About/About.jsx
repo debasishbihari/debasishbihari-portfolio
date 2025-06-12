@@ -7,7 +7,7 @@ export default function About() {
       <section id="about" className="py-16 md:py-32  text-white bg-[#04081A]">
         <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
           <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl text-white">
-            Developer
+            Software Developer
             {/* , Designer, Creator, Innovator */}
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
@@ -41,22 +41,30 @@ export default function About() {
               </p> */}
 
               <p className="text-white">
-                Hey there! I’m{" "}
+                Hii, I’m{" "}
                 <span className="font-semibold text-white">
                   Debasish Bihari
                 </span>{" "}
-                — a curious and creative JavaScript developer driven by a
-                passion for building intuitive, high-impact web experiences.
-                Whether it&apos;s crafting slick interfaces or streamlining
-                development workflows, I thrive on transforming ideas into
-                elegant, functional digital products.
+                — a JavaScript developer with a love for building clean,
+                intuitive, and impactful web experiences. I&apos;m someone who
+                gets genuinely excited about turning ideas into real-world
+                applications, whether that means designing smooth user
+                interfaces or optimizing development workflows behind the
+                scenes.
               </p>
               <p className="text-white">
-                My mission? To make web development faster, smarter, and more
-                accessible to everyone. Lately, I’ve been diving deep into
-                backend development to evolve as a full-stack developer,
-                blending design and logic to create seamless, end-to-end web
-                solutions.
+                What drives me? A deep curiosity and the joy of creating things
+                that make a difference. I believe in the power of code to solve
+                problems, connect people, and bring ideas to life in beautiful,
+                functional ways.
+              </p>
+              <p className="text-white">
+                Right now, I'm on a mission to grow as a full-stack developer.
+                While my heart has always been in frontend development, I’m
+                diving into backend systems to build more complete, seamless
+                solutions from top to bottom. My goal is simple: to make web
+                development not just powerful, but also faster, smarter, and
+                more accessible for everyone.
               </p>
 
               {/* <div className="pt-6">
